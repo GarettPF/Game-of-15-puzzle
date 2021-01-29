@@ -214,7 +214,7 @@ return value:
 template <class Type>
 const LL<Type>& LL<Type>::operator=(const LL& rhs) {
 	if (rhs.head == nullptr)
-		return;
+		return this;
 
 	node *temp = rhs.head;
 	this->head = new node;
